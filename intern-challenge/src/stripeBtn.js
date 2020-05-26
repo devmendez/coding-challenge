@@ -1,3 +1,5 @@
+
+//this component button when clicked will open the react stripe checkout modal
 import React, { Fragment } from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 import axios from 'axios';
@@ -28,13 +30,13 @@ const onToken = token => {
   return (
     <StripeCheckout
       label="Go Premium" //Component button text
-      name="Business LLC" //Modal Header
+      name="Your Business LLC" //Modal Header
       description="Upgrade to a premium account today."
       panelLabel="Go Premium" //Submit button in modal
-      amount={999} //Amount in cents $9.99
+      amount={799} //Amount in cents $7.99
       token={onToken}
       stripeKey={publishableKey}
-      image="https://www.vidhub.co" //Pop-in header image
+      image="https://stripe.com/img/documentation/checkout/marketplace.png"
       billingAddress={false}
     />
   );

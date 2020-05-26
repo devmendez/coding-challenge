@@ -8,7 +8,7 @@ class App extends Component{
   render() {
   return (
     <div className="App">
-      <p>Stripe Checkout testing app</p>
+      <p>Stripe Checkout API coding challenge</p>
       <StripeBtn />
     </div>
   );
