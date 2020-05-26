@@ -11,7 +11,7 @@ const stripeBtn = () => {
 
 const onToken = token => {
     const body = {
-      amount: 999,
+      amount: 799,
       token: token
   };
 
@@ -29,10 +29,10 @@ const onToken = token => {
 
   return (
     <StripeCheckout
-      label="Go Premium" //Component button text
-      name="Your Business LLC" //Modal Header
+      label="Pay Here" //Component button text
+      name="Managerly LLC" //Modal Header
       description="Upgrade to a premium account today."
-      panelLabel="Go Premium" //Submit button in modal
+      panelLabel="Checkout" //Submit button in modal
       amount={799} //Amount in cents $7.99
       token={onToken}
       stripeKey={publishableKey}
